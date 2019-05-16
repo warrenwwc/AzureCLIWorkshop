@@ -25,12 +25,12 @@ Docker:
 
 REST API:
 
-curl --request POST \
+`curl --request POST \
   --url https://eastasia.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
   --header 'ocp-apim-subscription-key: {BILLING_KEY}' \
-  --data '{"documents": [{"language": "en","id": "1","text": "Hello world. This is some input text that I love."}]}'
+  --data '{"documents": [{"language": "en","id": "1","text": "Hello world. This is some input text that I love."}]}'`
 
 ## Reference
 
