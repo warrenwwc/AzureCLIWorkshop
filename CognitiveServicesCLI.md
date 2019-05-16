@@ -11,7 +11,7 @@
 |Create text analytics|`az cognitiveservices account create -n textanalyticsapi -g apiResourceGroup --kind TextAnalytics --sku S3 -l EastAsia --y`|
 |List text analytics keys|`az cognitiveservices account keys list --name textanalyticsapi -g apiResourceGroup `|
 |Pull text analytics image|`docker pull mcr.microsoft.com/azure-cognitive-services/keyphrase:latest`|
-|Run analytics image|`docker run --rm -it -p 5000:5000 --memory 4g --cpus 1 mcr.microsoft.com/azure-cognitive-services/keyphrase Eula=accept Billing={BILLING_ENDPOINT_URI} ApiKey={BILLING_KEY}`
+|Run analytics image|`docker run --rm -it -p 5000:5000 --memory 4g --cpus 1 mcr.microsoft.com/azure-cognitive-services/keyphrase Eula=accept Billing=https://eastasia.api.cognitive.microsoft.com/text/analytics/v2.0 ApiKey={BILLING_KEY}`
 
 Test it:
 
